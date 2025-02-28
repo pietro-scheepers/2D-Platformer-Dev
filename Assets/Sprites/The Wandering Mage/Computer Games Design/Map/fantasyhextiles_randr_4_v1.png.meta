@@ -1,0 +1,667 @@
+fileFormatVersion: 2
+guid: 2b08466a77a1a194da7e72db88a34f1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2304685391414588865
+    second: fantasyhextiles_randr_4_v1_0
+  - first:
+      213: 9022689700366235785
+    second: fantasyhextiles_randr_4_v1_1
+  - first:
+      213: -6383128560658331558
+    second: fantasyhextiles_randr_4_v1_2
+  - first:
+      213: -2160099444882533124
+    second: fantasyhextiles_randr_4_v1_3
+  - first:
+      213: -1451395333959164393
+    second: fantasyhextiles_randr_4_v1_4
+  - first:
+      213: 708166949181643256
+    second: fantasyhextiles_randr_4_v1_5
+  - first:
+      213: -460381128038319413
+    second: fantasyhextiles_randr_4_v1_6
+  - first:
+      213: 4043544129482986420
+    second: fantasyhextiles_randr_4_v1_7
+  - first:
+      213: -2412438139375856006
+    second: fantasyhextiles_randr_4_v1_8
+  - first:
+      213: -1909175411357807756
+    second: fantasyhextiles_randr_4_v1_9
+  - first:
+      213: 7610222655417158784
+    second: fantasyhextiles_randr_4_v1_10
+  - first:
+      213: -6300099635335917887
+    second: fantasyhextiles_randr_4_v1_11
+  - first:
+      213: 4623713670417455711
+    second: fantasyhextiles_randr_4_v1_12
+  - first:
+      213: 6613226923636080798
+    second: fantasyhextiles_randr_4_v1_13
+  - first:
+      213: 8011454460330736404
+    second: fantasyhextiles_randr_4_v1_14
+  - first:
+      213: -7478052392386344341
+    second: fantasyhextiles_randr_4_v1_15
+  - first:
+      213: 8906294665241086423
+    second: fantasyhextiles_randr_4_v1_16
+  - first:
+      213: 5374398313179450665
+    second: fantasyhextiles_randr_4_v1_17
+  - first:
+      213: -8167307383826515192
+    second: fantasyhextiles_randr_4_v1_18
+  - first:
+      213: 5862928233500920596
+    second: fantasyhextiles_randr_4_v1_19
+  - first:
+      213: 372827134301018286
+    second: fantasyhextiles_randr_4_v1_20
+  - first:
+      213: 7105829810548201279
+    second: fantasyhextiles_randr_4_v1_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 199
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a83b5e8dc1400e0800000000000000
+      internalID: -2304685391414588865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 199
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988b7ec6a78073d70800000000000000
+      internalID: 9022689700366235785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 199
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a584f42b4629a67a0800000000000000
+      internalID: -6383128560658331558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 199
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf41244eff8c502e0800000000000000
+      internalID: -2160099444882533124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 199
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e54b232ab9bdbe0800000000000000
+      internalID: -1451395333959164393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 210
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9d4a7961ae3d900800000000000000
+      internalID: 708166949181643256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 199
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca7bf1adc56c99f0800000000000000
+      internalID: -460381128038319413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 151
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3137f46fd8d1830800000000000000
+      internalID: 4043544129482986420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 151
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76d5eb3b4c458ed0800000000000000
+      internalID: -2412438139375856006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 151
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b8b10241f3185e0800000000000000
+      internalID: -1909175411357807756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 151
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c05c53f21fc9960800000000000000
+      internalID: 7610222655417158784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 103
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce0c32d2cc8198a0800000000000000
+      internalID: -6300099635335917887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 103
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a9954f51bba2040800000000000000
+      internalID: 4623713670417455711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 103
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90c06249d6e6cb50800000000000000
+      internalID: 6613226923636080798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_14
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 101
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b7b3a92676e2f60800000000000000
+      internalID: 8011454460330736404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_15
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 103
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a4d0438fe983890800000000000000
+      internalID: -7478052392386344341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 103
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9c6aa7fc3899b70800000000000000
+      internalID: 8906294665241086423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_17
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 112
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d05828ac2b59a40800000000000000
+      internalID: 5374398313179450665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 55
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b7897e435e7ae80800000000000000
+      internalID: -8167307383826515192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 54
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b4e6d4a2e4d5150800000000000000
+      internalID: 5862928233500920596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_20
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea893a6ad4c8c2500800000000000000
+      internalID: 372827134301018286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasyhextiles_randr_4_v1_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 55
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f375b1c709afc9260800000000000000
+      internalID: 7105829810548201279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
