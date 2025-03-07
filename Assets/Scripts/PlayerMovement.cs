@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float jumpHeight; 
     private float horizontalInput;
     private bool facingRight = true;
- 
+    private bool isGrounded = true;
     void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -28,9 +28,10 @@ public class PlayerMovement : MonoBehaviour
             facingRight= true;
             }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && isGrounded == true)
         {
             Jump();
+            isGrounded = false;
         }
     }
 
@@ -41,5 +42,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump(){
         body.linearVelocity = new Vector2(body.linearVelocityX, jumpHeight) ;
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
+        }
     }
 }
