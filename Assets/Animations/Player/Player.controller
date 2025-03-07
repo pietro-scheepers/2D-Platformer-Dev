@@ -12,10 +12,10 @@ AnimatorStateTransition:
     m_ConditionEvent: run
     m_EventTreshold: 0.1
   - m_ConditionMode: 2
-    m_ConditionEvent: jump
+    m_ConditionEvent: fall
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: fall
+    m_ConditionEvent: jump
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6695538262310268876}
@@ -48,7 +48,7 @@ AnimatorStateMachine:
     m_Position: {x: -80, y: -120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6658582594341370991}
-    m_Position: {x: -150, y: -220, z: 0}
+    m_Position: {x: -150, y: -250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8002677217699952662}
     m_Position: {x: -730, y: -220, z: 0}
@@ -468,9 +468,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: jump
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: fall
     m_EventTreshold: 0

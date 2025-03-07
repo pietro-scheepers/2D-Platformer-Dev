@@ -509,6 +509,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3028227960557901781, guid: 69c7350453c19a64d884b49dabd93702, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8158934
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028227960557901781, guid: 69c7350453c19a64d884b49dabd93702, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0070533007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028227960557901781, guid: 69c7350453c19a64d884b49dabd93702, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.82
+      objectReference: {fileID: 0}
     - target: {fileID: 5453644819984027737, guid: 69c7350453c19a64d884b49dabd93702, type: 3}
       propertyPath: speed
       value: 10
