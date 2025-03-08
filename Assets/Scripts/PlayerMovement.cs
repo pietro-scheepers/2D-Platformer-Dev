@@ -46,6 +46,10 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("fall", true);
             anim.SetBool("jump",false);
         }
+
+        if (Input.GetMouseButtonDown(0)){ //hit
+            anim.SetTrigger("hit");
+        }
     }
 
     void FixedUpdate()
