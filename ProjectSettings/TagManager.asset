@@ -42,5 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: sky
+    uniqueID: 661059635
+    locked: 0
+  - name: cloud
+    uniqueID: 855869209
+    locked: 0
+  - name: Trees
+    uniqueID: 3394418935
+    locked: 0
+  - name: HouseProps
+    uniqueID: 4021654527
+    locked: 0
+  - name: Tilemap_bg
+    uniqueID: 89588413
+    locked: 0
+  - name: GroundTile
+    uniqueID: 2652351509
+    locked: 0
   m_RenderingLayers:
   - Default

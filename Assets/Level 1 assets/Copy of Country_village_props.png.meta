@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Copy of Country_village_props_0: 8945533573929877385
+      Copy of Country_village_props_1: -6367747258327326362
+      Copy of Country_village_props_10: 2958700608357699072
+      Copy of Country_village_props_2: -4982372986277332862
+      Copy of Country_village_props_3: -4663515793844522260
+      Copy of Country_village_props_4: 1547227300779278035
+      Copy of Country_village_props_5: 3910979495039152329
+      Copy of Country_village_props_6: -3098278275654780394
+      Copy of Country_village_props_7: 367269754076934543
+      Copy of Country_village_props_8: 6400858359991321520
+      Copy of Country_village_props_9: -9107140425392999023
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
