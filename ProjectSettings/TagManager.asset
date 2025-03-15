@@ -9,10 +9,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Box Environment
   - 
   - 
   - 
@@ -51,11 +51,11 @@ TagManager:
   - name: Trees
     uniqueID: 3394418935
     locked: 0
-  - name: HouseProps
-    uniqueID: 4021654527
-    locked: 0
   - name: Tilemap_bg
     uniqueID: 89588413
+    locked: 0
+  - name: HouseProps
+    uniqueID: 4021654527
     locked: 0
   - name: GroundTile
     uniqueID: 2652351509
