@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -9,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float jumpHeight; 
     [SerializeField] public LayerMask groundLayer;
     private float horizontalInput;
-    private bool facingRight = true;
+    public bool facingRight = true;
 
     void Awake()
     {
@@ -58,11 +59,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("fall",false);
             anim.SetBool("jump",false);
         }
-
-        if (Input.GetMouseButtonDown(0)) // Attack
-        {
-            anim.SetTrigger("hit");
-        }
     }
 
     void FixedUpdate()
@@ -80,5 +76,13 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded(){
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size,0,Vector2.down,0.15f,groundLayer);
         return raycastHit.collider!=null;
+    }
+    public bool CanAttack(){
+        return horizontalInput==0 && IsGrounded();
+    }
+
+    public bool GetDirection()
+    {
+        return facingRight;
     }
 }
