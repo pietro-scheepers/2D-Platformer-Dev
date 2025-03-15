@@ -4,71 +4,81 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D body;
     private Animator anim;
+    private BoxCollider2D boxCollider;
     [SerializeField] public float speed;
     [SerializeField] public float jumpHeight; 
+    [SerializeField] public LayerMask groundLayer;
     private float horizontalInput;
     private bool facingRight = true;
-    private bool isGrounded = true;
+
     void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
     } 
 
-    // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal"); //movement
+        horizontalInput = Input.GetAxis("Horizontal"); // Movement
 
-        //facing left or right
-        if (horizontalInput<0f && facingRight == true){
-            transform.eulerAngles = new Vector3(0f,-180f ,0f);
-            facingRight= false;
-        }
-        else if (horizontalInput>0f && facingRight == false){
-            transform.eulerAngles = new Vector3(0f,0f ,0f);
-            facingRight= true;
-            }
-
-        if (Input.GetKey(KeyCode.Space) && isGrounded == true)
+        // Flip the character when changing direction
+        if (horizontalInput < 0f && facingRight)
         {
+            transform.eulerAngles = new Vector3(0f, -180f, 0f);
+            facingRight = false;
+        }
+        else if (horizontalInput > 0f && !facingRight)
+        {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            facingRight = true;
+        }
 
+        // Jump logic
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        {
             Jump();
         }
 
-        if (Mathf.Abs(horizontalInput)>0.1f){ //check running
-            anim.SetFloat("run",1f);
-        }else if (Mathf.Abs(horizontalInput)<0.1f) anim.SetFloat("run",0f);
+        // Running animation
+        anim.SetFloat("run", Mathf.Abs(horizontalInput));
 
-        //checking when the player is falling
-        if (body.linearVelocityY < 0f && isGrounded == false)
+        // Fall detection (only trigger falling when moving downward)
+        if (body.linearVelocityY < -0.1f && !IsGrounded())
         {
             anim.SetBool("fall", true);
+            anim.SetBool("jump", false);
+        }
+        else if (body.linearVelocityY > 0.1f)
+        {
+            anim.SetBool("jump", true);
+            anim.SetBool("fall", false);
+        }else if (IsGrounded())
+        {
+            anim.SetBool("fall",false);
             anim.SetBool("jump",false);
         }
 
-        if (Input.GetMouseButtonDown(0)){ //hit
+        if (Input.GetMouseButtonDown(0)) // Attack
+        {
             anim.SetTrigger("hit");
         }
     }
 
     void FixedUpdate()
     {
-        body.linearVelocity = new Vector2(horizontalInput*speed, body.linearVelocityY); //move horizontal
+        // Move the character
+        body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocityY);
     }
 
-    void Jump(){
-        isGrounded = false;
-        anim.SetBool("jump",true);
-        body.linearVelocity = new Vector2(body.linearVelocityX, jumpHeight) ;
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
+    void Jump()
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-            isGrounded = true;
-            anim.SetBool("fall",false);
-        }
+        anim.SetBool("jump", true);
+        body.linearVelocity = new Vector2(body.linearVelocityX, jumpHeight);
+    }
+
+    private bool IsGrounded(){
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size,0,Vector2.down,0.15f,groundLayer);
+        return raycastHit.collider!=null;
     }
 }
