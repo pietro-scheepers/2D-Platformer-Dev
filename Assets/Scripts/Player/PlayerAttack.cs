@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SerializeField]private float attackCooldown;
-    [SerializeField]private Transform firePoint;
-    [SerializeField]private GameObject[] arrows;
+    [SerializeField] private float attackCooldown;
+    [SerializeField] private Transform firePoint;
+    
+    [SerializeField] private GameObject[] arrows;
+    [SerializeField] private GameObject[] fireSpells;
+    [SerializeField] private GameObject[] iceSpells;
+
     private PlayerMovement playerMovement;
     private Animator anim;
     private float cooldownTimer = Mathf.Infinity;
+
+    [SerializeField] private string activeAttack = "A"; // "A" for Arrow, "F" Fire, "I" Ice
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -16,49 +23,81 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && cooldownTimer>attackCooldown && playerMovement.CanAttack())
+        cooldownTimer += Time.deltaTime;
+
+        if (Input.GetMouseButtonDown(0) && cooldownTimer > attackCooldown && playerMovement.CanAttack())
         {
             Attack();
-            cooldownTimer += Time.deltaTime;
         }
     }
 
     private void Attack()
     {
-        anim.SetTrigger("arrow_attack");
+        string animTrigger = "";
+        GameObject[] selectedPool = null;
+
+        switch (activeAttack)
+        {
+            case "A":
+                animTrigger = "arrow_attack";
+                selectedPool = arrows;
+                break;
+            case "F":
+                animTrigger = "fire_attack";
+                selectedPool = fireSpells;
+                break;
+            case "I":
+                animTrigger = "ice_attack";
+                selectedPool = iceSpells;
+                break;
+            default:
+                Debug.LogError("Unknown attack type!");
+                return;
+        }
+
+        // Trigger animation
+        anim.SetTrigger(animTrigger);
         cooldownTimer = 0;
 
-        int arrowIndex = FindArrow();
-        if(arrowIndex == -1){
-            return;
-        }
-        if (arrows[arrowIndex] == null)
+        // Find available projectile
+        int attackIndex = FindInactiveProjectile(selectedPool);
+
+        if (attackIndex == -1)
         {
-            Debug.LogError("Arrow at index " + arrowIndex + " is null!");
+            Debug.LogWarning("No inactive projectiles available for " + activeAttack);
             return;
         }
 
-        arrows[arrowIndex].transform.position = firePoint.position;
-        
-        Projectile projectile = arrows[arrowIndex].GetComponent<Projectile>();
-        if (projectile == null)
+        // Launch projectile
+        GameObject projectileObject = selectedPool[attackIndex];
+        projectileObject.transform.position = firePoint.position;
+
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        if (projectile != null)
         {
-            Debug.LogError("Projectile component missing on arrow at index " + arrowIndex);
-            return;
+            int direction = playerMovement.GetDirection() ? 1 : -1;
+            projectile.SetDirection(direction);
         }
-        int direction = playerMovement.GetDirection()?1:-1;
-        projectile.SetDirection(direction);
+        else
+        {
+            Debug.LogError("Projectile component missing on prefab.");
+        }
     }
 
-    private int FindArrow(){
-        for (int i = 0; i < arrows.Length; i++)
+    private int FindInactiveProjectile(GameObject[] pool)
+    {
+        for (int i = 0; i < pool.Length; i++)
         {
-            if (!arrows[i].activeInHierarchy)
+            if (!pool[i].activeInHierarchy)
             {
                 return i;
             }
-        }    
-        Debug.LogError("No inactive arrows available! Returning -1.");
-        return -1;
+        }
+        return -1; // No available projectile
+    }
+
+    public void SetActiveAttack(string attackType)
+    {
+        activeAttack = attackType;
     }
 }

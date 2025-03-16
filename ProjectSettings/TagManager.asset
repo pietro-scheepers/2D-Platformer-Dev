@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Enemy
   - PowerUp
+  - IceAttack
+  - ArrowAttack
+  - FireAttack
   layers:
   - Default
   - TransparentFX

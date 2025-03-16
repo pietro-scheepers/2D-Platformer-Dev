@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     private BoxCollider2D boxCollider;
     private bool hit;
     private float lifetime;
+    public enum ProjectileType { Arrow, Fire, Ice }
+    private ProjectileType projectileType;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -32,27 +34,36 @@ public class Projectile : MonoBehaviour
         {
             hit = true;
             boxCollider.enabled = false;
-            anim.SetTrigger("arrow_hit");
+              switch (projectileType)
+            {
+                case ProjectileType.Arrow:
+                    anim.SetTrigger("arrow_hit");
+                    break;
+                case ProjectileType.Fire:
+                    anim.SetTrigger("fire_hit");
+                    break;
+                case ProjectileType.Ice:
+                    anim.SetTrigger("ice_hit");
+                    break;
+            }
         }
-        
     }
 
     public void SetDirection(float _direction)
     {
-        if (gameObject == null)
-        {
-            Debug.LogError("Projectile gameObject is null!");
-            return;
-        }
         lifetime = 0;
         direction = _direction;
         gameObject.SetActive(true);
-        hit = false;
-        if (boxCollider == null)
+        if (gameObject.CompareTag("IceAttack"))
         {
-            Debug.LogError("BoxCollider2D is NULL on " + gameObject.name);
-            return;
+            projectileType = ProjectileType.Ice;
+        }else if (gameObject.CompareTag("FireAttack")){
+            projectileType = ProjectileType.Fire;
+        }else if (gameObject.CompareTag("ArrowAttack")){
+            projectileType = ProjectileType.Arrow;
         }
+
+        hit = false;
         boxCollider.enabled = true; 
 
         float localScaleX = transform.localScale.x;
