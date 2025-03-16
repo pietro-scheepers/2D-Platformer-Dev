@@ -46,7 +46,6 @@ public class Projectile : MonoBehaviour
         }
         lifetime = 0;
         direction = _direction;
-        Debug.Log(direction);
         gameObject.SetActive(true);
         hit = false;
         if (boxCollider == null)
@@ -57,8 +56,6 @@ public class Projectile : MonoBehaviour
         boxCollider.enabled = true; 
 
         float localScaleX = transform.localScale.x;
-        
-        Debug.Log(localScaleX);
         if(Mathf.Sign(localScaleX)!=_direction){
             localScaleX = -localScaleX;
         }
