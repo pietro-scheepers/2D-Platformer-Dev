@@ -71,7 +71,6 @@ public class PlayerAttack : MonoBehaviour
         // Launch projectile
         GameObject projectileObject = selectedPool[attackIndex];
         projectileObject.transform.position = firePoint.position;
-
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         if (projectile != null)
         {

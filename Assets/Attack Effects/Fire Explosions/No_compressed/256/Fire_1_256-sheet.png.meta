@@ -106,7 +106,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire_1_256-sheet_0: -1356443444220173275
+      Fire_1_256-sheet_1: -8445715458187341000
+      Fire_1_256-sheet_10: -328560012360478206
+      Fire_1_256-sheet_11: -9123152885761745250
+      Fire_1_256-sheet_12: 7488554428986724138
+      Fire_1_256-sheet_13: 1650873590317214627
+      Fire_1_256-sheet_14: 959974326469118539
+      Fire_1_256-sheet_15: -6270259756724273976
+      Fire_1_256-sheet_16: -8710295355868950063
+      Fire_1_256-sheet_17: -6991973952325815958
+      Fire_1_256-sheet_18: 8437508036323939458
+      Fire_1_256-sheet_19: -212546156019763921
+      Fire_1_256-sheet_2: -886993990021899575
+      Fire_1_256-sheet_20: 2087218235466777356
+      Fire_1_256-sheet_21: -1734558837064181511
+      Fire_1_256-sheet_22: 4020601826527563840
+      Fire_1_256-sheet_23: 2821659403352912513
+      Fire_1_256-sheet_3: 4847912051179235844
+      Fire_1_256-sheet_4: -4240212001311686500
+      Fire_1_256-sheet_5: -2161787999718974448
+      Fire_1_256-sheet_6: -883741502284936712
+      Fire_1_256-sheet_7: 7286697798426438674
+      Fire_1_256-sheet_8: -5872577350654690489
+      Fire_1_256-sheet_9: 1123213970992012755
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
