@@ -41,4 +41,8 @@ public class Health : MonoBehaviour
             }
         }
     }
+    public void AddHealth(float _value){
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+        bar.fillAmount = bar.Map(currentHealth,0,startingHealth,0,1);
+    }
 }
