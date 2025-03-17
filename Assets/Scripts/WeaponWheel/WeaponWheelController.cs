@@ -2,15 +2,20 @@ using UnityEngine;
 using UnityEngine.UI;
 public class WeaponWheelController : MonoBehaviour
 {
-    public Animator anim;
+    private Animator anim;
     private bool weaponWheelSelected = false;
     public static bool isWeaponWheelOpen = false;
 
     public Image selectedItem;
     public Sprite noImage;
     public static int weaponID;
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();   
+    }
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             weaponWheelSelected = !weaponWheelSelected;
@@ -18,6 +23,7 @@ public class WeaponWheelController : MonoBehaviour
         }
         if (weaponWheelSelected)
         {
+            
             anim.SetBool("OpenWeaponWheel",true);
         }else{
             

@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -80, y: 57.934967}
-  m_SizeDelta: {x: 99, y: 67.8699}
+  m_AnchoredPosition: {x: -81.225, y: 61.119}
+  m_SizeDelta: {x: 96.551, y: 74.239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7683092
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2120884901773514841, guid: 2042f235a81a15a468a9b00bc39bcc3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4691,6 +4691,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8803626507606206125, guid: a7ff9c6fa3fe7ba4088ec647bbcde9df, type: 3}
   m_PrefabInstance: {fileID: 1985870294112149947}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1342254722 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2232063042999029054, guid: a7ff9c6fa3fe7ba4088ec647bbcde9df, type: 3}
+  m_PrefabInstance: {fileID: 1985870294112149947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1346687265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3517551042067291393, guid: f3e955db7762d2c4a90fa308c8508790, type: 3}
@@ -6543,10 +6548,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3507006502098747254}
     m_Modifications:
+    - target: {fileID: 2232063042999029054, guid: a7ff9c6fa3fe7ba4088ec647bbcde9df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232063042999029054, guid: a7ff9c6fa3fe7ba4088ec647bbcde9df, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dfd3a2d80f40f45498325b9b873959be, type: 2}
     - target: {fileID: 3079215458630602644, guid: a7ff9c6fa3fe7ba4088ec647bbcde9df, type: 3}
       propertyPath: selectedItem
       value: 
       objectReference: {fileID: 7683092}
+    - target: {fileID: 3998345170118792177, guid: a7ff9c6fa3fe7ba4088ec647bbcde9df, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1342254722}
     - target: {fileID: 3998345170118792177, guid: a7ff9c6fa3fe7ba4088ec647bbcde9df, type: 3}
       propertyPath: selectedItem
       value: 
