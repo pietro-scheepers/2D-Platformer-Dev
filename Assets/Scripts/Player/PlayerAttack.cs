@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim;
     private float cooldownTimer = Mathf.Infinity;
 
-    [SerializeField] private string activeAttack = "A"; // "A" for Arrow, "F" Fire, "I" Ice
+    [SerializeField] private string activeAttack = "A"; // "A" for Arrow, "F" Fire, "I" Ice , "G" for Gravity
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class PlayerAttack : MonoBehaviour
     {
         cooldownTimer += Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0) && cooldownTimer > attackCooldown && playerMovement.CanAttack())
+        if (Input.GetMouseButtonDown(0) && cooldownTimer > attackCooldown && playerMovement.CanAttack() && !WeaponWheelController.isWeaponWheelOpen)
         {
             Attack();
         }
