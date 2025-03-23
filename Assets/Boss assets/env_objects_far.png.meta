@@ -934,7 +934,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      env_objects_far_0: 5523072527411134411
+      env_objects_far_1: -2145963636862938879
+      env_objects_far_10: 4533815202545714673
+      env_objects_far_11: -7228714060412972556
+      env_objects_far_12: -6247226732579534578
+      env_objects_far_13: 2616258375082235358
+      env_objects_far_14: 1324613995879830111
+      env_objects_far_15: 4815986326893599771
+      env_objects_far_16: -8932524913640165980
+      env_objects_far_17: -1822516803485948431
+      env_objects_far_18: 1163663255342014470
+      env_objects_far_19: 720861514253670287
+      env_objects_far_2: -5251588707850142563
+      env_objects_far_20: -5315710336637258278
+      env_objects_far_21: -5531897612542260333
+      env_objects_far_22: 4328265979961028063
+      env_objects_far_23: 6770852326876538347
+      env_objects_far_24: 3928245233611741199
+      env_objects_far_25: -392924653099572888
+      env_objects_far_26: 5054949812865283417
+      env_objects_far_27: 8370928601205879020
+      env_objects_far_28: -5784996973768186853
+      env_objects_far_29: -2426034060458060451
+      env_objects_far_3: -3570498370308417566
+      env_objects_far_30: 695140260773559368
+      env_objects_far_31: -1857540194041958126
+      env_objects_far_32: 2152535434035624540
+      env_objects_far_4: -6333352022718078023
+      env_objects_far_5: 4623534353049830923
+      env_objects_far_6: -6415849280222716481
+      env_objects_far_7: -4663079961623292584
+      env_objects_far_8: -2726500829534181181
+      env_objects_far_9: -6456211993493918491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

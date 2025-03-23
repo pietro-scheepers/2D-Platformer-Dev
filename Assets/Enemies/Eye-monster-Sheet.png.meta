@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eye-monster-Sheet_0: -4712316025684814434
+      Eye-monster-Sheet_1: 3246463804016371593
+      Eye-monster-Sheet_2: 5742527490181693977
+      Eye-monster-Sheet_3: -4472707435853876299
+      Eye-monster-Sheet_4: 8935829074173006049
+      Eye-monster-Sheet_5: 3701646493298016911
+      Eye-monster-Sheet_6: 7055472895272060320
+      Eye-monster-Sheet_7: -2789428261669773165
+      Eye-monster-Sheet_8: 8440453890735018329
+      Eye-monster-Sheet_9: -9142665095808760044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

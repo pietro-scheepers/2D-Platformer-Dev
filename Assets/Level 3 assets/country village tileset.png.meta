@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      country village tileset_0: 3136732487619265641
+      country village tileset_1: 8259208373503455127
+      country village tileset_2: -5317611131718536643
+      country village tileset_3: -86884099132020098
+      country village tileset_4: -3617511746741735146
+      country village tileset_5: 526815475268764449
+      country village tileset_6: 8607227692187040408
+      country village tileset_7: -5883936790349717817
+      country village tileset_8: 7713958647471787891
+      country village tileset_9: -1265387191513669408
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

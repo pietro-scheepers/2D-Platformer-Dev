@@ -5,38 +5,63 @@ public class WeaponWheelButtonController : MonoBehaviour
 {
     public int ID;
     private Animator anim;
-    public string itemName;
+    [SerializeField]private string itemName;
     public TextMeshProUGUI itemText;
-    public Image selectedItem;
     public Sprite icon;
     private bool selected = false;
+    [SerializeField]private bool isUnlocked = false;
+    public CanvasGroup canvasGroup; 
     private void Awake()
     {
         anim = GetComponent<Animator>();
     }
 
+    public void Start()
+    {
+        UpdateButtonState();
+    }
+
     private void Update()
     {
-        if (selected)
+        if (selected && isUnlocked)
         {
-            selectedItem.sprite = icon;
             itemText.text = itemName;
         }
     }
     public void Selected(){
+        if (!isUnlocked)return;
         selected = true;
         WeaponWheelController.weaponID=ID;
     }
     public void Deselected(){
         selected = false;
-        WeaponWheelController.weaponID=0;
     }
     public void HoverEnter(){
+        if(!isUnlocked)return;
         anim.SetBool("Hover",true);
         itemText.text = itemName;
     }
     public void HoverExit(){
         anim.SetBool("Hover",false);
         itemText.text ="";
+    }
+    public void  Unlock()
+    {
+        isUnlocked = true;
+        Selected();
+        UpdateButtonState();
+    }
+    private void UpdateButtonState()
+    {
+        if (!isUnlocked)
+        {
+            canvasGroup.alpha = 0.5f;
+            GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            canvasGroup.alpha = 1f;
+            GetComponent<Button>().interactable = true;
+        }
     }
 }

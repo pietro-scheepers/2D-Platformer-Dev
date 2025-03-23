@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fantasyhextiles_v3_0: 2323810373656511008
+      fantasyhextiles_v3_1: 5667840648637180397
+      fantasyhextiles_v3_2: -6154527537789328042
+      fantasyhextiles_v3_3: -4512851853396015951
+      fantasyhextiles_v3_4: 1350654428746220928
+      fantasyhextiles_v3_5: -5275657792330925411
+      fantasyhextiles_v3_6: -3882381983857373155
+      fantasyhextiles_v3_7: 192585891294205710
+      fantasyhextiles_v3_8: 2450796846250647559
+      fantasyhextiles_v3_9: 6233921878529581075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -809,7 +809,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire_1_512-comp_sheet_0: 4602914741237398898
+      Fire_1_512-comp_sheet_1: 7317744369567612979
+      Fire_1_512-comp_sheet_10: -4600579996634474203
+      Fire_1_512-comp_sheet_11: 5891707568248088177
+      Fire_1_512-comp_sheet_12: 6626047700783613970
+      Fire_1_512-comp_sheet_13: -6118814140962468568
+      Fire_1_512-comp_sheet_14: -2833377334649244921
+      Fire_1_512-comp_sheet_15: -6914027751850157747
+      Fire_1_512-comp_sheet_16: -8658422374570521628
+      Fire_1_512-comp_sheet_17: 3432157515437546684
+      Fire_1_512-comp_sheet_18: -7260429978090349220
+      Fire_1_512-comp_sheet_19: -146241556643845689
+      Fire_1_512-comp_sheet_2: 1642013648864090705
+      Fire_1_512-comp_sheet_20: 2757711591822267677
+      Fire_1_512-comp_sheet_21: -6967597835307882413
+      Fire_1_512-comp_sheet_22: 9017289486748176638
+      Fire_1_512-comp_sheet_23: -3688215448010336482
+      Fire_1_512-comp_sheet_24: 7563561709778158919
+      Fire_1_512-comp_sheet_25: 672956085179827683
+      Fire_1_512-comp_sheet_26: 327951227453955045
+      Fire_1_512-comp_sheet_27: -4584006897761109352
+      Fire_1_512-comp_sheet_3: 1933314398576439805
+      Fire_1_512-comp_sheet_4: -3766746598591371102
+      Fire_1_512-comp_sheet_5: -4171476708837755967
+      Fire_1_512-comp_sheet_6: 4934496526994942015
+      Fire_1_512-comp_sheet_7: 5501021032735958999
+      Fire_1_512-comp_sheet_8: -6226100201676037079
+      Fire_1_512-comp_sheet_9: 6026650654015258531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

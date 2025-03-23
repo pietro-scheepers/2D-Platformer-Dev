@@ -1809,7 +1809,75 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      environment_0: 7672064755138430786
+      environment_1: -2744459860488241012
+      environment_10: 4165128164306938461
+      environment_11: -323903969209065456
+      environment_12: -5937689324370487578
+      environment_13: -2165935937957050944
+      environment_14: 2788575817972176465
+      environment_15: 4974348922224852886
+      environment_16: 6392840603695723863
+      environment_17: 5894456973331927412
+      environment_18: -7926329556758324344
+      environment_19: -2365401283775468158
+      environment_2: 689176432287940110
+      environment_20: -2930417143489551661
+      environment_21: 4100768849177070629
+      environment_22: 4652017824245888918
+      environment_23: 3186176698075660450
+      environment_24: 6486239017867254704
+      environment_25: 7466302278050763250
+      environment_26: 3961262200826768655
+      environment_27: 7418279706217316532
+      environment_28: -2106828971146420321
+      environment_29: 7412927537296194453
+      environment_3: -3465110836789601462
+      environment_30: -3772462212282900806
+      environment_31: -6345805954683542436
+      environment_32: 6216763140232382512
+      environment_33: -8001879596121672183
+      environment_34: 6153567483706531682
+      environment_35: 4503098069244212246
+      environment_36: 7175937845585053642
+      environment_37: 5769458428372761230
+      environment_38: -80665359821273222
+      environment_39: 7081010729905289659
+      environment_4: -7163797405583273556
+      environment_40: -693760619600915825
+      environment_41: -6523699173822432990
+      environment_42: 8223587109957624835
+      environment_43: -8952132360862916563
+      environment_44: -8966975849504131172
+      environment_45: 6755432189013397595
+      environment_46: -9065554838762200189
+      environment_47: -5891983375885874649
+      environment_48: -2245743373464471259
+      environment_49: -2794251547208510550
+      environment_5: -1112349361429245251
+      environment_50: 4915787116821862684
+      environment_51: -3459723992356619702
+      environment_52: -2857046667532521858
+      environment_53: -8461425959771005852
+      environment_54: 3706851962978231671
+      environment_55: 6150701578765685073
+      environment_56: -5761109571685636372
+      environment_57: 8239664970094182905
+      environment_58: 5947759181974331649
+      environment_59: -2857186295392663661
+      environment_6: 2129779222011270706
+      environment_60: -1924497478427292484
+      environment_61: 8634089259560252345
+      environment_62: 5546688150162818509
+      environment_63: -4173734392338253006
+      environment_64: -5202548654388343003
+      environment_65: 726886212185270823
+      environment_66: 8089808731461831553
+      environment_67: 7618982974297765198
+      environment_7: 1984830909761902803
+      environment_8: 6397742363319337115
+      environment_9: -6225525426658374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

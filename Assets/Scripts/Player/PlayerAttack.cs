@@ -13,8 +13,6 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim;
     private float cooldownTimer = Mathf.Infinity;
 
-    [SerializeField] private string activeAttack = "A"; // "A" for Arrow, "F" Fire, "I" Ice , "G" for Gravity
-
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -36,17 +34,17 @@ public class PlayerAttack : MonoBehaviour
         string animTrigger = "";
         GameObject[] selectedPool = null;
 
-        switch (activeAttack)
+        switch (WeaponWheelController.weaponID)
         {
-            case "A":
+            case 1:
                 animTrigger = "arrow_attack";
                 selectedPool = arrows;
                 break;
-            case "F":
+            case 2:
                 animTrigger = "fire_attack";
                 selectedPool = fireSpells;
                 break;
-            case "I":
+            case 3:
                 animTrigger = "ice_attack";
                 selectedPool = iceSpells;
                 break;
@@ -64,7 +62,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (attackIndex == -1)
         {
-            Debug.LogWarning("No inactive projectiles available for " + activeAttack);
+            Debug.LogWarning("No inactive projectiles available for " + WeaponWheelController.weaponID);
             return;
         }
 
@@ -95,8 +93,7 @@ public class PlayerAttack : MonoBehaviour
         return -1; // No available projectile
     }
 
-    public void SetActiveAttack(string attackType)
-    {
-        activeAttack = attackType;
+    public void UnlockAttack(string attackType){
+        WeaponWheelController.instance.UnlockButton(attackType);
     }
 }

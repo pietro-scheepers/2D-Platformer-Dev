@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Attack-freeze_0: 5100869933418869878
+      Attack-freeze_1: -59792461899047299
+      Attack-freeze_10: 6016773033052606087
+      Attack-freeze_11: 101010551521750045
+      Attack-freeze_12: 441628314780634484
+      Attack-freeze_13: -204923920716829685
+      Attack-freeze_14: 2359504444183852150
+      Attack-freeze_15: 3410652146784105740
+      Attack-freeze_16: 165429903418320814
+      Attack-freeze_17: 5761261470242287953
+      Attack-freeze_18: 8402534595102985187
+      Attack-freeze_19: -18258611722203513
+      Attack-freeze_2: -3496525863745463772
+      Attack-freeze_20: -926790720247803862
+      Attack-freeze_21: 4449701998729498144
+      Attack-freeze_22: 5302431761349480297
+      Attack-freeze_23: 4444196507755114984
+      Attack-freeze_3: 429488539915905229
+      Attack-freeze_4: -2560515927854117434
+      Attack-freeze_5: -2692277185081049930
+      Attack-freeze_6: -7841136547593540164
+      Attack-freeze_7: 8161550941718834591
+      Attack-freeze_8: -8676354765366488819
+      Attack-freeze_9: -2209283111776246826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

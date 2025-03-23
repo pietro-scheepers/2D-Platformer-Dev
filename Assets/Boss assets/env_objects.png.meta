@@ -934,7 +934,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      env_objects_0: 8671700224118952190
+      env_objects_1: -5037028212883886307
+      env_objects_10: -3962540015320659979
+      env_objects_11: -3460432637847329446
+      env_objects_12: -8518720971160261509
+      env_objects_13: 5484239958282013950
+      env_objects_14: 4336375328377095396
+      env_objects_15: 8469887678864031441
+      env_objects_16: 439194574935405012
+      env_objects_17: -9021763699465221220
+      env_objects_18: 2830668721769997767
+      env_objects_19: -4560314208204382264
+      env_objects_2: -317265606039657693
+      env_objects_20: 1933278254306597245
+      env_objects_21: 1125777686131563040
+      env_objects_22: 3713454286310905852
+      env_objects_23: 4499842187311384527
+      env_objects_24: -1150759356522994151
+      env_objects_25: -8393485864149362039
+      env_objects_26: 5580459764592924683
+      env_objects_27: 2839271634865978316
+      env_objects_28: 4288356590214110134
+      env_objects_29: 3593749693079801331
+      env_objects_3: 4250664581107366082
+      env_objects_30: -2615744989723929371
+      env_objects_31: -1915396583689942877
+      env_objects_32: -1142286757930104601
+      env_objects_4: 2843373234320684264
+      env_objects_5: 4327133736962177957
+      env_objects_6: -8689526717953010581
+      env_objects_7: 2790641225047025190
+      env_objects_8: 7207731035687923575
+      env_objects_9: -9043760971925332099
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Slime-Sheet-export_0: 129034239860205736
+      Slime-Sheet-export_1: -7658133415762440902
+      Slime-Sheet-export_2: 4828762103483323752
+      Slime-Sheet-export_3: 7868062248969313998
+      Slime-Sheet-export_4: -8198826051147266822
+      Slime-Sheet-export_5: 4669183667653963537
+      Slime-Sheet-export_6: 5036048463208664313
+      Slime-Sheet-export_7: 6003048927754934183
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

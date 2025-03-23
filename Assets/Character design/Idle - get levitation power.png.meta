@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Idle - get levitation power_0: 4685181637037497166
+      Idle - get levitation power_1: -2796872196843516257
+      Idle - get levitation power_2: 1329818014779127592
+      Idle - get levitation power_3: -7078491860969408757
+      Idle - get levitation power_4: 1317603784355816061
+      Idle - get levitation power_5: -719770805674319632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

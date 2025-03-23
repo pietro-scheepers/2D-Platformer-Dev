@@ -8,9 +8,8 @@ public class Powerup : MonoBehaviour
         {
             Animator anim = collision.gameObject.GetComponent<Animator>();
             anim.SetTrigger("powerup");
-            anim.SetBool("power",true);
+            collision.gameObject.GetComponent<PlayerAttack>().UnlockAttack("F");
             gameObject.SetActive(false);
-            collision.gameObject.GetComponent<PlayerAttack>().SetActiveAttack("F");
         }
     }
 }

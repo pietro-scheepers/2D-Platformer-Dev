@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      potions-basic-sheet-9_0: -3668932406356796240
+      potions-basic-sheet-9_1: 7873063208107052241
+      potions-basic-sheet-9_2: 8014970609535221031
+      potions-basic-sheet-9_3: 348633164178650220
+      potions-basic-sheet-9_4: 7977265815191359442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

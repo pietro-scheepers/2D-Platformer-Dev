@@ -484,7 +484,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Attack-levitate_0: -6615305553109377253
+      Attack-levitate_1: 4550359654150056206
+      Attack-levitate_10: 9191435797362662375
+      Attack-levitate_11: -1593130841684329890
+      Attack-levitate_12: 2291450091626250444
+      Attack-levitate_13: -4955246521775135780
+      Attack-levitate_14: 8109506704758460647
+      Attack-levitate_2: -7245454258730020801
+      Attack-levitate_3: 2025472301405397377
+      Attack-levitate_4: 1442728554878073856
+      Attack-levitate_5: 8393868852155825162
+      Attack-levitate_6: 5029548862357001299
+      Attack-levitate_7: -2847122341816127716
+      Attack-levitate_8: -1908203927930877719
+      Attack-levitate_9: 3705143147968898642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

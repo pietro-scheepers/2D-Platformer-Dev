@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Idle - get fire power_0: -525955253323592953
+      Idle - get fire power_1: 1345189477337888989
+      Idle - get fire power_2: 5997389284335823006
+      Idle - get fire power_3: 656381195291565314
+      Idle - get fire power_4: -1511478029430721415
+      Idle - get fire power_5: -4287155399168342416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
