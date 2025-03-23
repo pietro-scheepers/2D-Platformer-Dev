@@ -8,11 +8,13 @@ public class Health : MonoBehaviour
     [SerializeField]private Healthbar bar;
     private Animator anim;
     private bool dead;
+    private AudioManager audioManager;
 
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Update()
@@ -36,6 +38,7 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
+                audioManager.PlaySFX(audioManager.death);
                 GetComponent<PlayerMovement>().enabled = false;   
                 dead = true;
             }

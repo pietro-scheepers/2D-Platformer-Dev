@@ -9,6 +9,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject[] fireSpells;
     [SerializeField] private GameObject[] iceSpells;
 
+    AudioManager audioManager;
+
     private PlayerMovement playerMovement;
     private Animator anim;
     private float cooldownTimer = Mathf.Infinity;
@@ -17,6 +19,7 @@ public class PlayerAttack : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Update()
@@ -39,14 +42,17 @@ public class PlayerAttack : MonoBehaviour
             case 1:
                 animTrigger = "arrow_attack";
                 selectedPool = arrows;
+                audioManager.PlaySFX(audioManager.arrow);
                 break;
             case 2:
                 animTrigger = "fire_attack";
                 selectedPool = fireSpells;
+                audioManager.PlaySFX(audioManager.fire);
                 break;
             case 3:
                 animTrigger = "ice_attack";
                 selectedPool = iceSpells;
+                audioManager.PlaySFX(audioManager.ice);
                 break;
             default:
                 Debug.LogError("Unknown attack type!");
