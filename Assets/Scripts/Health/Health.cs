@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
+              audioManager.PlaySFX(audioManager.take_damage);
         }
         else
         {

@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip gravity;
     public AudioClip health_collectible;
     public AudioClip powerup;
+    public AudioClip take_damage;
     private void Start(){
         musicSource.clip = background;
         musicSource.Play();
