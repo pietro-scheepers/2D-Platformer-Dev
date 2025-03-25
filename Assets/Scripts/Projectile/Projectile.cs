@@ -36,6 +36,7 @@ public class Projectile : MonoBehaviour
         {
             hit = true;
             boxCollider.enabled = false;
+            if(collision.CompareTag("Enemy"))collision.GetComponent<Health>().TakeDamage(5);
             switch (projectileType)
             {
                 case ProjectileType.Arrow:

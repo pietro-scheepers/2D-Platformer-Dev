@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8334651344603559088, guid: 6b2f2d89777ac7449aa9a24bb29d8378, type: 3}
+  m_Sprite: {fileID: -1271484241614341412, guid: df3d64ddab7623c44b7fd551399a9c56, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -236,8 +236,9 @@ MonoBehaviour:
   ID: 2
   itemName: Fire
   itemText: {fileID: 334597657128750085}
-  selectedItem: {fileID: 0}
   icon: {fileID: 8334651344603559088, guid: 6b2f2d89777ac7449aa9a24bb29d8378, type: 3}
+  isUnlocked: 0
+  canvasGroup: {fileID: 0}
 --- !u!114 &491295213291725537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,8 +477,9 @@ MonoBehaviour:
   ID: 1
   itemName: Arrow
   itemText: {fileID: 334597657128750085}
-  selectedItem: {fileID: 0}
   icon: {fileID: -2120884901773514841, guid: 2042f235a81a15a468a9b00bc39bcc3b, type: 3}
+  isUnlocked: 0
+  canvasGroup: {fileID: 0}
 --- !u!114 &8193618742048408794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,8 +793,9 @@ MonoBehaviour:
   ID: 4
   itemName: Gravity
   itemText: {fileID: 334597657128750085}
-  selectedItem: {fileID: 0}
   icon: {fileID: 21300000, guid: 2c067c177e6e234409510a8dffbf4dc7, type: 3}
+  isUnlocked: 0
+  canvasGroup: {fileID: 0}
 --- !u!114 &1705533055505718043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,8 +1184,9 @@ MonoBehaviour:
   ID: 3
   itemName: Ice
   itemText: {fileID: 334597657128750085}
-  selectedItem: {fileID: 0}
   icon: {fileID: -5559181022113775781, guid: df75b9cf129d24044bd7e7322dc094b4, type: 3}
+  isUnlocked: 0
+  canvasGroup: {fileID: 0}
 --- !u!114 &3753588926374440462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1314,9 +1318,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17abe02bc8b8ed47bb98a3c8273c060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 2232063042999029054}
+  buttons:
+  - {fileID: 3079215458630602644}
+  - {fileID: 8190905816367360184}
+  - {fileID: 6027271154545286828}
+  - {fileID: 6634818659279683314}
   selectedItem: {fileID: 0}
-  noImage: {fileID: 0}
+  lastSelectedWeaponID: 1
+  arrowIconSprite: {fileID: -2120884901773514841, guid: 2042f235a81a15a468a9b00bc39bcc3b, type: 3}
+  fireIconSprite: {fileID: -1271484241614341412, guid: df3d64ddab7623c44b7fd551399a9c56, type: 3}
+  iceIconSprite: {fileID: -5559181022113775781, guid: df75b9cf129d24044bd7e7322dc094b4, type: 3}
+  gravityIconSprite: {fileID: 21300000, guid: 2c067c177e6e234409510a8dffbf4dc7, type: 3}
+  player: {fileID: 0}
 --- !u!95 &2232063042999029054
 Animator:
   serializedVersion: 7

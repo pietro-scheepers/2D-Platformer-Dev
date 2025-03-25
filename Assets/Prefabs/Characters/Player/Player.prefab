@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3929543895860542433}
   - component: {fileID: 7948264364995793592}
   - component: {fileID: 8816036749614283631}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ MonoBehaviour:
   jumpHeight: 12
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 256
   facingRight: 1
 --- !u!114 &3929543895860542433
 MonoBehaviour:
@@ -232,7 +232,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  activeAttack: A
 --- !u!95 &7948264364995793592
 Animator:
   serializedVersion: 7
@@ -278,7 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446959160074958686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

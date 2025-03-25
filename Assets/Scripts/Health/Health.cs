@@ -9,12 +9,14 @@ public class Health : MonoBehaviour
     private Animator anim;
     private bool dead;
     private AudioManager audioManager;
+    private bool isPlayer;
 
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        isPlayer = CompareTag("Player");
     }
 
     private void Update()
@@ -28,25 +30,34 @@ public class Health : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-        bar.fillAmount = bar.Map(currentHealth,0,startingHealth,0,1);
+        if (isPlayer)bar.fillAmount = bar.Map(currentHealth,0,startingHealth,0,1);
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
-              audioManager.PlaySFX(audioManager.take_damage);
+            if (isPlayer) audioManager.PlaySFX(audioManager.take_damage);
         }
         else
         {
             if (!dead)
             {
                 anim.SetTrigger("die");
-                audioManager.PlaySFX(audioManager.death);
-                GetComponent<PlayerMovement>().enabled = false;   
+                if (isPlayer)
+                {
+                    //player
+                    audioManager.PlaySFX(audioManager.death);
+                    if (GetComponentInParent<PlayerMovement>()!=null)GetComponent<PlayerMovement>().enabled = false; 
+                }else{
+                    //enemy
+                    if (GetComponentInParent<EnemyPatrol>()!=null)GetComponentInParent<EnemyPatrol>().enabled = false;
+                    if (GetComponentInParent<MeleeEnemy>()!=null)GetComponentInParent<MeleeEnemy>().enabled =false;
+                }
+                  
                 dead = true;
             }
         }
     }
     public void AddHealth(float _value){
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
-        bar.fillAmount = bar.Map(currentHealth,0,startingHealth,0,1);
+        if(isPlayer) bar.fillAmount = bar.Map(currentHealth,0,startingHealth,0,1);
     }
 }
