@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3937688745996057425}
   - component: {fileID: 229483035355099041}
   - component: {fileID: 5310266457859055137}
-  - component: {fileID: 2469854175793717255}
+  - component: {fileID: 5761447439240223611}
   m_Layer: 0
   m_Name: FireWormAttack
   m_TagString: FireWormAttack
@@ -186,7 +186,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2469854175793717255
+--- !u!114 &5761447439240223611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7638998949110560880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 700b40820fb0bb941a9a57149a2accc5, type: 3}
+  m_Script: {fileID: 11500000, guid: fc5bf411a4eb70f4eba348a743eac3cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12

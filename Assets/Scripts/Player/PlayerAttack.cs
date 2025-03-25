@@ -59,10 +59,6 @@ public class PlayerAttack : MonoBehaviour
                 return;
         }
 
-        // Trigger animation
-        anim.SetTrigger(animTrigger);
-        cooldownTimer = 0;
-
         // Find available projectile
         int attackIndex = FindInactiveProjectile(selectedPool);
 
@@ -71,11 +67,14 @@ public class PlayerAttack : MonoBehaviour
             Debug.LogWarning("No inactive projectiles available for " + WeaponWheelController.weaponID);
             return;
         }
+         // Trigger animation
+        anim.SetTrigger(animTrigger);
+        cooldownTimer = 0;
 
         // Launch projectile
         GameObject projectileObject = selectedPool[attackIndex];
         projectileObject.transform.position = firePoint.position;
-        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        PlayerProjectile projectile = projectileObject.GetComponent<PlayerProjectile>();
         if (projectile != null)
         {
             int direction = playerMovement.GetDirection() ? 1 : -1;

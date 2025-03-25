@@ -22,10 +22,12 @@ public class RangedEnemy : MonoBehaviour
     private Animator anim;
     private Health playerHealth;
     private EnemyPatrol enemyPatrol;
+    private Transform enemy;
 
     private void Awake(){
         anim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<EnemyPatrol>();
+        enemy = GetComponent<Transform>();
     }
     private void Update()
     {
@@ -33,20 +35,35 @@ public class RangedEnemy : MonoBehaviour
         if (PlayerInSight())
         {
             if (cooldownTimer >= attackCooldown){
-                cooldownTimer = 0;
-                anim.SetTrigger("rangedAttack");
+                RangedAttack();
             }   
         }
         if (enemyPatrol!=null){
-                enemyPatrol.enabled = !PlayerInSight();
+            enemyPatrol.enabled = !PlayerInSight();
         }
     }
     private void RangedAttack(){
+        //finding available projectile
+        int attackIndex = FindProjctile();
+         if (attackIndex == -1)
+        {
+            Debug.LogWarning("No inactive projectiles available for enemy");
+            return;
+        }
+        //trigger animation
+        anim.SetTrigger("rangedAttack");;
         cooldownTimer = 0;
-        projectiles[FindProejctile()].transform.position = firePoint.position;
-      //  projectiles[FindProejctile()].GetComponent<EnemyProjectile>().ActivateProjectile();
+        //launch projectile
+        GameObject projectileObject = projectiles[attackIndex];
+        projectileObject.transform.position = firePoint.position;
+        EnemyProjectile projectile = projectileObject.GetComponent<EnemyProjectile>();
+        if (projectile!=null)
+        {
+            int direction = GetDirection(); 
+            projectile.SetDirection(direction);
+        }
     }
-    private int FindProejctile(){
+    private int FindProjctile(){
         for (int i = 0; i < projectiles.Length; i++)
         {
             if (!projectiles[i].activeInHierarchy)
@@ -67,5 +84,9 @@ public class RangedEnemy : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(boxCollider.bounds.center+transform.right*range*transform.localScale.x*colliderDistance,
         new Vector3(boxCollider.bounds.size.x*range,boxCollider.bounds.size.y,boxCollider.bounds.size.z));
+    }
+    private int GetDirection()
+    {
+        return (int)Mathf.Sign(enemy.localScale.x);
     }
 }
