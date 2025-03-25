@@ -36,22 +36,26 @@ public class Projectile : MonoBehaviour
         {
             hit = true;
             boxCollider.enabled = false;
-            if(collision.CompareTag("Enemy"))collision.GetComponent<Health>().TakeDamage(5);
             switch (projectileType)
             {
                 case ProjectileType.Arrow:
                     anim.SetTrigger("arrow_hit");
+                    DamageEnemy(collision,5);
                     break;
                 case ProjectileType.Fire:
                     anim.SetTrigger("fire_hit");
+                    DamageEnemy(collision,20);
                     break;
                 case ProjectileType.Ice:
                     anim.SetTrigger("ice_hit");
+                    DamageEnemy(collision,20);
                     break;
             }
         }
     }
-
+    private void DamageEnemy(Collider2D collision,int _damage){
+        if(collision.CompareTag("Enemy"))collision.GetComponent<Health>().TakeDamage(_damage);
+    }
     public void SetDirection(float _direction)
     {
         lifetime = 0;
