@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6442789908220616259}
   - component: {fileID: 2428988890544113397}
   - component: {fileID: 7004918048415249743}
+  - component: {fileID: 5751878123180200419}
+  - component: {fileID: 6501559421203684579}
   m_Layer: 7
   m_Name: Flying eye
   m_TagString: Enemy
@@ -31,7 +33,8 @@ Transform:
   m_LocalPosition: {x: -33.23, y: -3.42, z: 0}
   m_LocalScale: {x: 0.52655, y: 0.5432, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8255557161109345859}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6442789908220616259
@@ -157,3 +160,68 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5751878123180200419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3719213939079856598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7161a5d7ee04c5e499d2afeebebea99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 2
+  _damage: 5
+  range: 0.4
+  colliderDistance: 2
+  boxCollider: {fileID: 2428988890544113397}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &6501559421203684579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3719213939079856598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99d46944fb6f6b54581a45bafaae2fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 70
+  bar: {fileID: 0}
+--- !u!1 &5941988018864951225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8255557161109345859}
+  m_Layer: 7
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8255557161109345859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5941988018864951225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.762, y: -0.665, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4169850111931134379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
