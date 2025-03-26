@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 65878120908542641}
   - component: {fileID: 2954435665340443182}
   - component: {fileID: 2338489844997968967}
+  - component: {fileID: 2055852280255494540}
   m_Layer: 7
   m_Name: Skeleton
   m_TagString: Enemy
@@ -207,16 +208,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8216b163c477d44ca46eee1a43a8556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
-  _damage: 5
+  attackCooldown: 5
   range: 10
   firePoint: {fileID: 2002711703068091644}
-  projectiles: []
+  projectiles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   colliderDistance: 1.19
   boxCollider: {fileID: 2958206764497321297}
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
+  enemy: {fileID: 8629816284241921188}
+--- !u!114 &2055852280255494540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5545038354405787007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b24cf907923ee4cae531ac4e4605a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyName: Skeleton
 --- !u!1 &8768195859464031289
 GameObject:
   m_ObjectHideFlags: 0

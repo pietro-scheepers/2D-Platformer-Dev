@@ -4,7 +4,6 @@ public class RangedEnemy : MonoBehaviour
 {
     [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
-    [SerializeField] private int _damage;
     [SerializeField] private float range;
 
     [Header("RangedAttack")]
@@ -18,16 +17,14 @@ public class RangedEnemy : MonoBehaviour
     [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
-    //references
+    [Header("References")]
+    public Transform enemy;
     private Animator anim;
-    private Health playerHealth;
     private EnemyPatrol enemyPatrol;
-    private Transform enemy;
 
     private void Awake(){
         anim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<EnemyPatrol>();
-        enemy = GetComponent<Transform>();
     }
     private void Update()
     {

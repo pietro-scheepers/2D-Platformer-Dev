@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -45,16 +46,35 @@ public class Health : MonoBehaviour
                 {
                     //player
                     audioManager.PlaySFX(audioManager.death);
-                    if (GetComponentInParent<PlayerMovement>()!=null)GetComponent<PlayerMovement>().enabled = false; 
+                    if (GetComponent<PlayerMovement>()!=null)GetComponent<PlayerMovement>().enabled = false; 
                 }else{
                     //enemy
                     if (GetComponentInParent<EnemyPatrol>()!=null)GetComponentInParent<EnemyPatrol>().enabled = false;
-                    if (GetComponentInParent<MeleeEnemy>()!=null)GetComponentInParent<MeleeEnemy>().enabled =false;
+                    if (GetComponent<MeleeEnemy>()!=null)GetComponent<MeleeEnemy>().enabled =false;
+                    if (GetComponent<RangedEnemy>()!=null)GetComponent<RangedEnemy>().enabled =false;
+                    PlayDeathEffect();
                 }
                   
                 dead = true;
             }
         }
+    }
+
+    private void PlayDeathEffect()
+    {
+        string enemyName = GetComponent<EnemyTag>().GetEnemyName();
+        switch (enemyName)
+        {
+            case "Skeleton": audioManager.PlaySFX(audioManager.skeleton_death);break;
+            case "Goblin": audioManager.PlaySFX(audioManager.goblin_death);break;            
+            case "FlyingEye": audioManager.PlaySFX(audioManager.goblin_death);break;
+            case "Mushroom": audioManager.PlaySFX(audioManager.goblin_death);break;            
+            case "Demon_Slime": audioManager.PlaySFX(audioManager.demon_death);break;
+            case "Frost_Guardian": audioManager.PlaySFX(audioManager.demon_death);break;
+        }
+    }
+    public void Deactivate(){
+        gameObject.SetActive(false);
     }
     public void AddHealth(float _value){
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);

@@ -73,15 +73,19 @@ public class EnemyProjectile : MonoBehaviour
         }
         else if(gameObject.CompareTag("MushroomAttack")){
             projectileType = ProjectileType.MushroomAttack;
+            audioManager.PlaySFX(audioManager.mushroom_range);
         }
         else if(gameObject.CompareTag("FlyingEyeAttack")){
             projectileType = ProjectileType.FlyingEyeAttack;
+            audioManager.PlaySFX(audioManager.flying_eye_range);
         }
         else if(gameObject.CompareTag("FireWormAttack")){
             projectileType = ProjectileType.FireWormAttack;
+            audioManager.PlaySFX(audioManager.fire);
         }
         else if(gameObject.CompareTag("GoblinBomb")){
             projectileType = ProjectileType.GoblinBomb;
+            audioManager.PlaySFX(audioManager.goblin_bomb);
         }
 
         hit = false;
@@ -95,19 +99,12 @@ public class EnemyProjectile : MonoBehaviour
     }
     
     private void Explosion(){
-        if (gameObject.CompareTag("FireWormAttack") || gameObject.CompareTag("GoblinBomb")) 
+        if (gameObject.CompareTag("FireWormAttack") || gameObject.CompareTag("GoblinBomb") || gameObject.CompareTag("MushroomAttack"))
         {
             audioManager.PlaySFX(audioManager.fire_explosion);
         }else if (gameObject.CompareTag("SwordAttack")){
-            //play sword hit
+            audioManager.PlaySFX(audioManager.sword_ranged_attack);
         }
-        else if (gameObject.CompareTag("FlyingEyeAttack")){
-            //play flying eye hit
-        }
-        else if (gameObject.CompareTag("MushroomAttack")){
-            //play mushroom hit
-        }
-
     }
     private void Deactivate(){
         gameObject.SetActive(false);
