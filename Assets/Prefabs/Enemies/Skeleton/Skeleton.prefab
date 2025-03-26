@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2954435665340443182}
   - component: {fileID: 2338489844997968967}
   - component: {fileID: 2055852280255494540}
+  - component: {fileID: 5598584099038946394}
   m_Layer: 7
   m_Name: Skeleton
   m_TagString: Enemy
@@ -128,7 +129,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.19688952, y: -0.017936826}
+  m_Offset: {x: -0.14856982, y: -0.017936826}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -138,7 +139,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9399338, y: 3.2044458}
+  m_Size: {x: 2.410986, y: 3.2044458}
   m_EdgeRadius: 0
 --- !u!95 &4428698521939090992
 Animator:
@@ -194,8 +195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 2
   _damage: 5
-  range: 2.5
-  colliderDistance: 0.4
+  range: 1.5
+  colliderDistance: 0.7
   boxCollider: {fileID: 2958206764497321297}
   playerLayer:
     serializedVersion: 2
@@ -213,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 5
-  range: 15
+  range: 6
   firePoint: {fileID: 2002711703068091644}
   projectiles:
   - {fileID: 0}
@@ -226,7 +227,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  colliderDistance: 0.62
+  colliderDistance: 1.7
   boxCollider: {fileID: 2958206764497321297}
   playerLayer:
     serializedVersion: 2
@@ -245,6 +246,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: Skeleton
+--- !u!114 &5598584099038946394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5545038354405787007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d288493c0555e79488c79e97e4aaf423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!1 &8768195859464031289
 GameObject:
   m_ObjectHideFlags: 0

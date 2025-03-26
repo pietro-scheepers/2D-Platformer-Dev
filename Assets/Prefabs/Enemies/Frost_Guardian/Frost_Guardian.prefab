@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1182619106638195240}
   - component: {fileID: 6223084708946959573}
   - component: {fileID: 2543187747540331404}
+  - component: {fileID: 2119644229080754602}
   m_Layer: 7
   m_Name: Frost_Guardian
   m_TagString: Enemy
@@ -209,3 +210,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: Frost_Guardian
+--- !u!114 &2119644229080754602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3496091609049167762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d288493c0555e79488c79e97e4aaf423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20

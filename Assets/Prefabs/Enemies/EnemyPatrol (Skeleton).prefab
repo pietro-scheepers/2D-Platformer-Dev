@@ -251,10 +251,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2449391186338304351}
     - target: {fileID: 2338489844997968967, guid: e114e25b807cf524888f57828163a8be, type: 3}
-      propertyPath: projectiles.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2338489844997968967, guid: e114e25b807cf524888f57828163a8be, type: 3}
       propertyPath: 'projectiles.Array.data[0]'
       value: 
       objectReference: {fileID: 7951990662634971674}

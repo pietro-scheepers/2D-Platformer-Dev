@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6501559421203684579}
   - component: {fileID: 1223034461886717085}
   - component: {fileID: 6762618751522346960}
+  - component: {fileID: 4707848235021953408}
   m_Layer: 7
   m_Name: Flying eye
   m_TagString: Enemy
@@ -234,6 +235,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   enemy: {fileID: 4169850111931134379}
+--- !u!114 &4707848235021953408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3719213939079856598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d288493c0555e79488c79e97e4aaf423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!1 &5941988018864951225
 GameObject:
   m_ObjectHideFlags: 0
