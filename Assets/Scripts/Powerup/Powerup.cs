@@ -15,6 +15,7 @@ public class Powerup : MonoBehaviour
             Animator anim = collision.gameObject.GetComponent<Animator>();
             anim.SetTrigger("powerup");
             audioManager.PlaySFX(audioManager.powerup);
+            collision.gameObject.GetComponent<PlayerAttack>().UnlockAttack("G");//for testing
             collision.gameObject.GetComponent<PlayerAttack>().UnlockAttack("F");
             gameObject.SetActive(false);
         }

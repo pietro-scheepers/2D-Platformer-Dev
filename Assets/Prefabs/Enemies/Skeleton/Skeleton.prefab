@@ -176,6 +176,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   bar: {fileID: 0}
+  components:
+  - {fileID: 2338489844997968967}
+  - {fileID: 2954435665340443182}
+  - {fileID: 0}
 --- !u!114 &2954435665340443182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 5
-  range: 10
+  range: 15
   firePoint: {fileID: 2002711703068091644}
   projectiles:
   - {fileID: 0}
@@ -222,7 +226,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  colliderDistance: 1.19
+  colliderDistance: 0.62
   boxCollider: {fileID: 2958206764497321297}
   playerLayer:
     serializedVersion: 2

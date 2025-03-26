@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5432468008010110885}
   - component: {fileID: 2081109643318930607}
   - component: {fileID: 3270061366259740010}
+  - component: {fileID: 5780977845942194272}
   m_Layer: 7
   m_Name: Mushroom
   m_TagString: Enemy
@@ -173,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161a5d7ee04c5e499d2afeebebea99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  attackCooldown: 1
   _damage: 5
   range: 1.1
   colliderDistance: 0.8
@@ -195,6 +196,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 50
   bar: {fileID: 0}
+  components:
+  - {fileID: 5432468008010110885}
+  - {fileID: 5780977845942194272}
 --- !u!114 &3270061366259740010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +212,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: Mushroom
+--- !u!114 &5780977845942194272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5046797425897407601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8216b163c477d44ca46eee1a43a8556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 3
+  range: 2
+  firePoint: {fileID: 4605251263257832100}
+  projectiles: []
+  colliderDistance: 1.6
+  boxCollider: {fileID: 2648257763256630499}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  enemy: {fileID: 5306187965432144912}
 --- !u!1 &5965554917182079329
 GameObject:
   m_ObjectHideFlags: 0

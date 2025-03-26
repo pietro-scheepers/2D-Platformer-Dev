@@ -3,12 +3,15 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    [Header("Health")]
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     public float StartingHealth => startingHealth;
     [SerializeField]private Healthbar bar;
     private Animator anim;
     private bool dead;
+    [Header("Components")]
+    [SerializeField] private Behaviour[] components;
     private AudioManager audioManager;
     private bool isPlayer;
 
@@ -49,9 +52,10 @@ public class Health : MonoBehaviour
                     if (GetComponent<PlayerMovement>()!=null)GetComponent<PlayerMovement>().enabled = false; 
                 }else{
                     //enemy
-                    if (GetComponentInParent<EnemyPatrol>()!=null)GetComponentInParent<EnemyPatrol>().enabled = false;
-                    if (GetComponent<MeleeEnemy>()!=null)GetComponent<MeleeEnemy>().enabled =false;
-                    if (GetComponent<RangedEnemy>()!=null)GetComponent<RangedEnemy>().enabled =false;
+                    foreach (Behaviour component in components)
+                    {
+                        component.enabled = false;
+                    }
                     PlayDeathEffect();
                 }
                   
