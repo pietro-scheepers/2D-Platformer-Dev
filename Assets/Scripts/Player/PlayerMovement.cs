@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        GameObject start = GameObject.FindGameObjectWithTag("Start");
+        transform.position = start.transform.position;
     } 
 
     void Update()

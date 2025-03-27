@@ -197,16 +197,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0ca09bc85cc1a45b4acc93c3105ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 0.01
+  attackCooldown: 0.5
   levitationAttackCooldown: 60
   firePoint: {fileID: 1446959160074958686}
   levitation_damage: 4
   arrows:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -276,6 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   bar: {fileID: 0}
+  enemy_bar: {fileID: 0}
+  components: []
 --- !u!1 &7098271156333265784
 GameObject:
   m_ObjectHideFlags: 0

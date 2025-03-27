@@ -16,6 +16,8 @@ TagManager:
   - FlyingEyeAttack
   - GoblinBomb
   - FireWormAttack
+  - Start
+  - End
   layers:
   - Default
   - TransparentFX

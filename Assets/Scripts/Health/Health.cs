@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public float currentHealth { get; private set; }
     public float StartingHealth => startingHealth;
     [SerializeField]private Healthbar bar;
+    [SerializeField]private EnemyHealthBar enemy_bar;
     private Animator anim;
     private bool dead;
     [Header("Components")]
@@ -21,20 +22,17 @@ public class Health : MonoBehaviour
         anim = GetComponent<Animator>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         isPlayer = CompareTag("Player");
-    }
-
-    private void Update()
-    { 
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            TakeDamage(10);
-        }
+        if (!isPlayer){enemy_bar.SetHealth(StartingHealth,startingHealth);        Debug.Log(enemy_bar);
+}
     }
 
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-        if (isPlayer)bar.fillAmount = bar.Map(currentHealth,0,startingHealth,0,1);
+        if (isPlayer){bar.fillAmount = bar.Map(currentHealth,0,startingHealth,0,1);}
+        else{
+            enemy_bar.SetHealth(currentHealth,startingHealth);
+        }
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
