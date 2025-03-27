@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 264c896baeb854840ba84db28590857f
+guid: ca4d73acfd5bf7a46a316fe68d6d427a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: -3413072803105544874
+    second: Run-flipped_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: -9183771251176884115
+    second: Run-flipped_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: 9175654921978156516
+    second: Run-flipped_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: -8577089886808958517
+    second: Run-flipped_3
   - first:
-      213: 7264182050183361747
-    second: Idle_4
+      213: -7718688905483696779
+    second: Run-flipped_4
   - first:
-      213: -2834552850196481573
-    second: Idle_5
+      213: -628524021618208872
+    second: Run-flipped_5
   - first:
-      213: 3278449094680734212
-    second: Idle_6
+      213: -4704006126512294456
+    second: Run-flipped_6
   - first:
-      213: 3384493420599841878
-    second: Idle_7
-  - first:
-      213: -2331352242086191015
-    second: Idle_8
-  - first:
-      213: -3914248031228685145
-    second: Idle_9
+      213: 8613729027118836883
+    second: Run-flipped_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,189 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Run-flipped_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 60
-        width: 41
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_1
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 60
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_2
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 60
-        width: 36
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 184dda4e3d6b3ec20800000000000000
-      internalID: 3234629978573100161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_3
-      rect:
-        serializedVersion: 2
-        x: 557
-        y: 60
-        width: 35
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96cb1dafe7d917850800000000000000
-      internalID: 6373048116405451881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_4
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 60
-        width: 36
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d4b2fc561f8fc460800000000000000
-      internalID: 7264182050183361747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_5
-      rect:
-        serializedVersion: 2
-        x: 878
-        y: 60
-        width: 39
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd9b7fa6335a9a8d0800000000000000
-      internalID: -2834552850196481573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_6
-      rect:
-        serializedVersion: 2
-        x: 1038
-        y: 60
-        width: 41
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40a65a6e4146f7d20800000000000000
-      internalID: 3278449094680734212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_7
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 60
-        width: 41
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 654108f85d228fe20800000000000000
-      internalID: 3384493420599841878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_8
-      rect:
-        serializedVersion: 2
-        x: 1361
-        y: 60
+        x: 62
+        y: 11
         width: 42
-        height: 47
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9506424ec7f55afd0800000000000000
-      internalID: -2331352242086191015
+      spriteID: 655e85a6e5452a0d0800000000000000
+      internalID: -3413072803105544874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_9
+      name: Run-flipped_1
       rect:
         serializedVersion: 2
-        x: 1523
-        y: 60
-        width: 41
-        height: 47
+        x: 222
+        y: 5
+        width: 43
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,8 +158,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a497d7772ccda9c0800000000000000
-      internalID: -3914248031228685145
+      spriteID: d68382b64b0bc8080800000000000000
+      internalID: -9183771251176884115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-flipped_2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 5
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5921e6989765f70800000000000000
+      internalID: 9175654921978156516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-flipped_3
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 5
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9182af03e08f880800000000000000
+      internalID: -8577089886808958517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-flipped_4
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 14
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57545e8f555b1e490800000000000000
+      internalID: -7718688905483696779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-flipped_5
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 5
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f85ae7bb80747f0800000000000000
+      internalID: -628524021618208872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-flipped_6
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 5
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c539ffc95308beb0800000000000000
+      internalID: -4704006126512294456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-flipped_7
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 5
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ca3e4a9ec1a8770800000000000000
+      internalID: 8613729027118836883
       vertices: []
       indices: 
       edges: []
@@ -360,16 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle_0: 4723107735738678597
-      Idle_1: -7385789195546760866
-      Idle_2: 3234629978573100161
-      Idle_3: 6373048116405451881
-      Idle_4: 7264182050183361747
-      Idle_5: -2834552850196481573
-      Idle_6: 3278449094680734212
-      Idle_7: 3384493420599841878
-      Idle_8: -2331352242086191015
-      Idle_9: -3914248031228685145
+      Run-flipped_0: -3413072803105544874
+      Run-flipped_1: -9183771251176884115
+      Run-flipped_2: 9175654921978156516
+      Run-flipped_3: -8577089886808958517
+      Run-flipped_4: -7718688905483696779
+      Run-flipped_5: -628524021618208872
+      Run-flipped_6: -4704006126512294456
+      Run-flipped_7: 8613729027118836883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
