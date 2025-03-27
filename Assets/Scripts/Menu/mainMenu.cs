@@ -32,6 +32,7 @@ public class mainMenu : MonoBehaviour
     {
         mapPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
+        mapPieces[levelsCompleted].SetActive(false);
     }
 
     void UpdateMap()
