@@ -28,7 +28,7 @@ TagManager:
   - Box Environment
   - Enemy
   - Ground
-  - 
+  - Map
   - 
   - 
   - 
@@ -72,6 +72,9 @@ TagManager:
     locked: 0
   - name: GroundTile
     uniqueID: 2652351509
+    locked: 0
+  - name: Map
+    uniqueID: 2764196745
     locked: 0
   m_RenderingLayers:
   - Default

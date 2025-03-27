@@ -7,7 +7,7 @@ public class mainMenu : MonoBehaviour
     public GameObject mainMenuPanel;
     public GameObject mapPanel;
     public GameObject[] mapPieces;
-    // Simulate player's progress - GET FROM SAVE FILE
+    // Simulate player's progress - GET FROM SAVE FILE!!!!!!!
     public int levelsCompleted = 0;
     public void playGame ()
     {
@@ -36,10 +36,6 @@ public class mainMenu : MonoBehaviour
 
     void UpdateMap()
     {
-        //for (int i = 0; i < mapPieces.Length; i++)
-        //{
-        //  mapPieces[i].SetActive(i <= levelsCompleted);
-        //}
         Debug.Log("Levels completed: " + levelsCompleted);
         mapPieces[levelsCompleted].SetActive(true);
     }

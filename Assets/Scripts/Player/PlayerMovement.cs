@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float speed;
     [SerializeField] public float jumpHeight; 
     [SerializeField] public LayerMask groundLayer;
+    [SerializeField] public GameObject map;
     private float horizontalInput;
     public bool facingRight = true;
 
@@ -86,5 +87,20 @@ public class PlayerMovement : MonoBehaviour
     public bool GetDirection()
     {
         return facingRight;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("End"))
+        {
+            endLevel();
+        }
+    }
+
+    //When player reaches the end of the level, this needs to be called and the levelsCompleted needs to increase by 1
+    public void endLevel()
+    {
+        Debug.Log("Finished level!!");
+        map.SetActive(true);
     }
 }
