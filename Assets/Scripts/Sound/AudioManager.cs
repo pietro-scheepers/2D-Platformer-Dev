@@ -19,7 +19,18 @@ public class AudioManager : MonoBehaviour
     public AudioClip health_collectible;
     public AudioClip powerup;
     public AudioClip take_damage;
-
+    public AudioClip sword_attack1;
+    public AudioClip sword_attack2;
+    public AudioClip sword_ranged_attack;
+    public AudioClip skeleton_death;
+    public AudioClip goblin_attack1;
+    public AudioClip goblin_attack2;
+    public AudioClip goblin_bomb;
+    public AudioClip goblin_death;
+    public AudioClip flying_eye_range;
+    public AudioClip mushroom_range;
+    public AudioClip demon_attack;
+    public AudioClip demon_death;
     private float volume = 1f;
     private const string VolumeKey = "Volume"; // Key for PlayerPrefs
 
@@ -39,6 +50,8 @@ public class AudioManager : MonoBehaviour
 
         LoadVolume();
     }
+   
+  
 
     private void Start()
     {
@@ -68,6 +81,6 @@ public class AudioManager : MonoBehaviour
 
     private void LoadVolume()
     {
-        volume = PlayerPrefs.GetFloat(VolumeKey, 1f); // Default to full volume if no saved value
+        volume = PlayerPrefs.GetFloat(VolumeKey, 1f);
     }
 }

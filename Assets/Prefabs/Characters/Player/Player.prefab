@@ -197,14 +197,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0ca09bc85cc1a45b4acc93c3105ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 0.01
+  attackCooldown: 0.5
+  levitationAttackCooldown: 60
   firePoint: {fileID: 1446959160074958686}
+  levitation_damage: 4
   arrows:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -232,6 +229,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  colliderDistance: 0.4
+  boxCollider: {fileID: 7665887432195641386}
+  range: 4
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!95 &7948264364995793592
 Animator:
   serializedVersion: 7
@@ -268,6 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   bar: {fileID: 0}
+  enemy_bar: {fileID: 0}
+  components: []
 --- !u!1 &7098271156333265784
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +298,7 @@ Transform:
   m_GameObject: {fileID: 7098271156333265784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.61, y: 0.108, z: 0}
+  m_LocalPosition: {x: 0.304, y: 0.096, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -316,3 +316,15 @@ MonoBehaviour:
   health_collectible: {fileID: 8300000, guid: 879945ab78529a6469c4e6748986f3d1, type: 3}
   powerup: {fileID: 8300000, guid: 5182a4cd7818cee47b6af6acedbc00fe, type: 3}
   take_damage: {fileID: 8300000, guid: 6684651904ac4aa4bb37fcc712adc4ed, type: 3}
+  sword_attack1: {fileID: 8300000, guid: b9d64e8bb430e56489d75ee79e368d47, type: 3}
+  sword_attack2: {fileID: 8300000, guid: 69a3ff1548ea0e543a842c26f89d9fcb, type: 3}
+  sword_ranged_attack: {fileID: 8300000, guid: 6c9406f7edd1f454b8a5fe52e2e69d74, type: 3}
+  skeleton_death: {fileID: 8300000, guid: ff65a6e1e58719f4d99edea38d59022b, type: 3}
+  goblin_attack1: {fileID: 8300000, guid: c4d840a7fbb0e4d4588cf144e676873f, type: 3}
+  goblin_attack2: {fileID: 8300000, guid: e634290fdcf637c49a127254dab610fe, type: 3}
+  goblin_bomb: {fileID: 8300000, guid: bbde8e3347358c9418c2fd2e524cf7ee, type: 3}
+  goblin_death: {fileID: 8300000, guid: bee5dbcd94c81dd4982d0854c04a54f7, type: 3}
+  flying_eye_range: {fileID: 8300000, guid: 20077e7c372553247a14a7c8364ff49b, type: 3}
+  mushroom_range: {fileID: 8300000, guid: 7bcaf6e8240c830459880f2ba355503e, type: 3}
+  demon_attack: {fileID: 8300000, guid: 1e70e37e7aacf0c4a8a06478f0c5d661, type: 3}
+  demon_death: {fileID: 8300000, guid: fd330ab2d1a62da45b1d1c5b813ba53d, type: 3}

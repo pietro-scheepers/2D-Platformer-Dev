@@ -11,6 +11,13 @@ TagManager:
   - ArrowAttack
   - FireAttack
   - Audio
+  - SwordAttack
+  - MushroomAttack
+  - FlyingEyeAttack
+  - GoblinBomb
+  - FireWormAttack
+  - Start
+  - End
   layers:
   - Default
   - TransparentFX
